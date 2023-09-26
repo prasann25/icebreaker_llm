@@ -1,3 +1,5 @@
+from typing import Tuple
+
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
@@ -8,7 +10,7 @@ from agents.wikipedia_lookup_agent import lookup as wikipedia_agent
 from output_parsers import person_intel_parser, PersonIntel
 
 
-def ice_break(name: str) -> PersonIntel:
+def ice_break(name: str) -> Tuple[PersonIntel, str]:
     # LangChain wikipedia Agent
     wikipedia_page = wikipedia_agent(name=name)
     print("Wikipedia page returned from agent is ", wikipedia_page)
@@ -49,8 +51,9 @@ def ice_break(name: str) -> PersonIntel:
     result = chain.run(
         linkedin_information=linkedin_data, wikipedia_information=wikipedia_data
     )
-    print(result)
-    return person_intel_parser.parse(result)
+    print(f"Result is {result}, "
+          f"\npic url is {linkedin_data.get('profile_pic_url')}")
+    return person_intel_parser.parse(result), linkedin_data.get("profile_pic_url")
 
 
 if __name__ == "__main__":
