@@ -5,31 +5,39 @@ from third_parties.linkedin import scrap_linkedin_profile
 from third_parties.wikipedia import scrape_wiki_profile
 from agents.linkedin_lookup_agent import lookup as linkedin_agent
 from agents.wikipedia_lookup_agent import lookup as wikipedia_agent
+from output_parsers import person_intel_parser, PersonIntel
 
-name = "Elon Musk"
-if __name__ == "__main__":
-    print("Hello LangChain !")
 
-    #LangChain wikipedia Agent
+def ice_break(name: str) -> PersonIntel:
+    # LangChain wikipedia Agent
     wikipedia_page = wikipedia_agent(name=name)
     print("Wikipedia page returned from agent is ", wikipedia_page)
     wikipedia_data = scrape_wiki_profile(wikipedia_page)
 
-    #LangChain LinkedIn Agent
+    # LangChain LinkedIn Agent
     linkedin_profile_url = linkedin_agent(name=name)
-    print("linkedin_profile_url", linkedin_profile_url)
+    print("linkedin_profile_url - ", linkedin_profile_url)
     linkedin_data = scrap_linkedin_profile(
         # "https://www.linkedin.com/in/williamhgates/"
         linkedin_profile_url=linkedin_profile_url
     )
 
+    print("LinkedIn data", linkedin_data)
+
     summary_template = """
                 given the Linkedin information {linkedin_information}  and wikipedia {wikipedia_information} about a person, I want you to create:
                 1. a short summary
                 2. two interesting facts about them in short sentence
+                3. A topic that may interest item
+                4. 2 creative Ice breakers to open a conversation with them
+                    \n{format_instructions}
     """
     summary_prompt_template = PromptTemplate(
-        input_variables=["linkedin_information", "wikipedia_information"], template=summary_template
+        input_variables=["linkedin_information", "wikipedia_information"],
+        template=summary_template,
+        partial_variable={
+            "format_instructions": person_intel_parser.get_format_instructions()
+        },
     )
 
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
@@ -38,5 +46,13 @@ if __name__ == "__main__":
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
 
     # Third party tool to scrap LinkedIn profile, given the url from the LLM agent
+    result = chain.run(
+        linkedin_information=linkedin_data, wikipedia_information=wikipedia_data
+    )
 
-    print(chain.run(linkedin_information=linkedin_data, wikipedia_information=wikipedia_data))
+    return person_intel_parser.parse(result)
+
+
+if __name__ == "__main__":
+    print("Hello LangChain !")
+    result = ice_break(name="Elon Musk")

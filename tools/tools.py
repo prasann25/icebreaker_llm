@@ -102,7 +102,8 @@ def process_response(res: dict) -> str:
         toret = "No good search result found"
     return toret
 
-def process_wiki_name_request(name : str) :
-    wiki_search =  wikipedia.search(name, results = 1)[0]
+
+def process_wiki_name_request(name: str):
+    wiki_search = wikipedia.search(name, results=1)[0]
     print("Wiki search result", wiki_search)
     return wiki_search
