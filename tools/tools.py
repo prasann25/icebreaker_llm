@@ -1,5 +1,6 @@
 from langchain.utilities import SerpAPIWrapper
 import requests
+import wikipedia
 
 
 class CustomSerpAPIWrapper(SerpAPIWrapper):
@@ -50,8 +51,9 @@ def get_profile_url_requests(name: str):
     """Searches for Linkedin or twitter Profile Page."""
     # session = aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False))
     # earch?engine=google&google_domain=&gl=us&hl=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)')))
-
-    url = "https://www.serpapi.com/search?engine=google&google_domain=google.com&gl=us&hl=en&api_key=134a1b830eb2b3ba028fba7e824a3e40a6944860e5e79bf5da94857bcc8f42bb&output=json&source=python&q=Bill+Gates+Linkedin"
+    namesearch = name.replace(" ", "+")
+    url = f"https://www.serpapi.com/search?engine=google&google_domain=google.com&gl=us&hl=en&api_key=134a1b830eb2b3ba028fba7e824a3e40a6944860e5e79bf5da94857bcc8f42bb&output=json&source=python&q={namesearch}+Linkedin"
+    print("\n LinkedIn SerpAPI is", url, namesearch)
     params = {
         "api_key": "134a1b830eb2b3ba028fba7e824a3e40a6944860e5e79bf5da94857bcc8f42bb",
         "output": "json",
@@ -99,3 +101,8 @@ def process_response(res: dict) -> str:
     else:
         toret = "No good search result found"
     return toret
+
+def process_wiki_name_request(name : str) :
+    wiki_search =  wikipedia.search(name, results = 1)[0]
+    print("Wiki search result", wiki_search)
+    return wiki_search
