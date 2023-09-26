@@ -6,13 +6,13 @@ from tools.tools import process_wiki_name_request
 
 def lookup(name: str) -> str:
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
-    template = """given the full name {name_of_person} I want you to find the page id of the Wikipedia page.
-                    Your answer should contain only wikipedia page Id"""
+    template = """given the full name {name_of_person} I want you to find the page of the Wikipedia title.
+                    Your answer should contain only wikipedia title """
     tools_for_agent = [
         Tool(
-            name="Crawl 4 Wikipedia profile page",
+            name="Crawl 4 Wikipedia page title",
             func=process_wiki_name_request,
-            description="useful for when you need get the Wikipedia Page Id",
+            description="useful for when you need get the Wikipedia title ",
         )
     ]
     agent = initialize_agent(

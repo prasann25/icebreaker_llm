@@ -52,7 +52,7 @@ def get_profile_url_requests(name: str):
     # session = aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False))
     # earch?engine=google&google_domain=&gl=us&hl=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)')))
     namesearch = name.replace(" ", "+")
-    url = f"https://www.serpapi.com/search?engine=google&google_domain=google.com&gl=us&hl=en&api_key=134a1b830eb2b3ba028fba7e824a3e40a6944860e5e79bf5da94857bcc8f42bb&output=json&source=python&q={namesearch}+Linkedin"
+    url = f"https://www.serpapi.com/search?engine=google&google_domain=google.com&gl=us&hl=en&api_key=134a1b830eb2b3ba028fba7e824a3e40a6944860e5e79bf5da94857bcc8f42bb&output=json&source=python&q={namesearch}"
     print("\n LinkedIn SerpAPI is", url, namesearch)
     params = {
         "api_key": "134a1b830eb2b3ba028fba7e824a3e40a6944860e5e79bf5da94857bcc8f42bb",
@@ -66,8 +66,8 @@ def get_profile_url_requests(name: str):
     }
     # urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     search = requests.get(url, verify=False)
-    print("search111", search)
     searchLink = process_response(search.json())
+    print("Search LinkedIn link ", searchLink)
     return searchLink
 
 

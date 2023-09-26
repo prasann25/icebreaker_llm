@@ -1,0 +1,181 @@
+{
+	"public_identifier": "Bill0101",
+	"profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/Bill0101/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230920%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230920T172345Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=aebaaedb5899f5b779e1f6e1199b058ad3501d55d7d474a646eb4e290160fc92",
+	"background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/Bill0101/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230920%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230920T172345Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3ad98946fc54cb22c02837303f6ecbe936979cb543cf9123c53d8aecab4689cf",
+	"first_name": "Bill",
+	"last_name": "Gates",
+	"full_name": "Bill Gates",
+	"follower_count": 6622,
+	"occupation": "",
+	"headline": "Director, Talent Acquisition at Peloton",
+	"summary": "I was born in Bangladesh, grew up in New York City and went to school in Nashville, TN (Vanderbilt). I am super Desi when it comes to Cricket and Bollywood. I love to read and travel. I circumnavigated the world to more than 45 countries. I volunteer regularly and am passionate about social good and technology.  \n\nCurrently, I am working to grow Peloton and disrupt the fitness industry. My job is to find and hire the current and future bad-asses in the technology industry.  \n\nI love my job! I hang out with a lot of tech nerds. I am a tech and political geek myself. I tried to pick up programming (Python) but not sure if I can do that for my career. I regularly attend tech meetups and I know a lot of powerful people in the tech industry.  \n\nI do not like pushy people. If you are nice, I will go out of my way to help you. I like to treat people with respect. I enjoy helping people and I love to learn about new technologies… Story of my life :)\n\nCountries I traveled:\nArgentina, Bahamas, Bangladesh, Brazil, Belgium, China, Cuba, Colombia, Egypt, England, France, Germany, Guatemala , Hong Kong, India, Ireland , Italy, Indonesia, Japan, Mauritius, Morocco, Namibia, Scotland ,St. Lucia, South Africa, Spain, Switzerland , Thailand , The Netherlands, Turkey, UAE, Uganda, Viet Nam, Zambia and Zimbabwe :)",
+	"country": "US",
+	"country_full_name": "United States of America",
+	"city": "New York",
+	"state": "New York",
+	"experiences": [{
+		"starts_at": "",
+		"ends_at": "",
+		"company": "New York New York",
+		"company_linkedin_profile_url": "",
+		"title": "",
+		"description": "",
+		"location": "",
+		"logo_url": ""
+	}, {
+		"starts_at": {
+			"day": 1,
+			"month": 1,
+			"year": 2010
+		},
+		"ends_at": {
+			"day": 1,
+			"month": 1,
+			"year": 2010
+		},
+		"company": "Vanderbilt Initiative For Scholarship and Global Engagement",
+		"company_linkedin_profile_url": "",
+		"title": "Education Policy Analyst",
+		"description": "* It was a very competitive program for 20 selected students to research economic development models of South Africa and then travel to South Africa to analyze the South African market and to organize service projects.\n* Last part of the program was to write a recommendation paper\n* Continued a yearlong research with Professor Brian Heuser on the economic effects of apartheid in South Africa and wrote a recommendation paper for the minister of public works and compared the economic growth of the Asian tiger economy (Taiwan, Hong Kong, Singapore and South Korea) and how South Africa can follow their path to fast economic growth\n* In South Africa, worked with community and gang leaders to reduce crime before the FIFA World Cup 2010\n* Evaluated the organization called SHAWC and redesigned the agenda for holiday classes in a low income areas to increase number of students passing the national Metric Exam",
+		"location": "",
+		"logo_url": ""
+	}, {
+		"starts_at": {
+			"day": 1,
+			"month": 6,
+			"year": 2019
+		},
+		"ends_at": "",
+		"company": "Wework",
+		"company_linkedin_profile_url": "https://www.linkedin.com/company/wework",
+		"title": "Senior Manager Talent Acquisition",
+		"description": "Managing a team of recruiters and sourcers to support Central Data, Pricing and Revenue optimization team at WeWork.",
+		"location": "New York, New York, United States",
+		"logo_url": ""
+	},   {
+		"starts_at": {
+			"day": 1,
+			"month": 1,
+			"year": 2010
+		},
+		"ends_at": {
+			"day": 1,
+			"month": 1,
+			"year": 2013
+		},
+		"company": "Amplify",
+		"company_linkedin_profile_url": "https://www.linkedin.com/company/amplifyinc",
+		"title": "Senior Technical Recruiter",
+		"description": "* Previously known as Wireless Generations, Amplify, (NewCorp Subsidiary) is a rapidly growing, Technology Based, Education Software Development company. We are working with some of the smartest people to create a cutting edge technology to overcome one of the greatest challenges of our time - how to improve K-12 education.\n* My responsibilities:\n* In charge of recruiting top candidates entry-level to executive positions, screening, scheduling, interviewing in a fast-paced environment for Amplify Access, Learning and Insight\n* Assemble talented engineering specilized in Big Data, Hadoop, Scala, Android, HTML5, Java, Python and cloud technology through effective recruiting strategies\n* Responsible for meeting managers and help them manage their hiring process\n* Campus Recruitment from NYU, Carnegie Mellon, MIT, Harvard and Waterloo.\n* Manage 15-20 open positions\n* Educate managers about the talent market\n* Responsible for negotiation of salary and closing candidates\n* Organize Engineering meetings through Meetup.com",
+		"location": "Brooklyn, New York, United States",
+		"logo_url": ""
+	}, {
+		"starts_at": {
+			"day": 1,
+			"month": 1,
+			"year": 2010
+		},
+		"ends_at": {
+			"day": 1,
+			"month": 1,
+			"year": 2010
+		},
+		"company": "Prestige Staffing",
+		"company_linkedin_profile_url": "https://www.linkedin.com/company/prestige-staffing",
+		"title": "Technical Recruiter",
+		"description": "* Direct Hire and Consulting Team\n* Source of Talent: 50% Database, 10% Boards, 40% LinkedIn\n* In charge of sourcing, screening, scheduling, interviewing engineers for direct hire and consulting positions\n* Recruited skills: Java, .Net, PHP, JavaScript, OBIEE, C++, ABAP, PeopleSoft, SQL, Objective C, Android, Windows 7, HTML 5, Python developers, IOS, Android, Business Analyst, Linux/Unix Administrator, Project manager, SAP, Hands on IT managers, Architects, Web development managers\n* Bring candidates for in-house interviews and take candidates out for lunch and coffee\n* Participate in various IT industry networking events to promote company services and find talents\n* Identify new sales opportunities through candidates and forward leads to sales managers and the director\n* Responsible for negotiating the best rates for my candidates\n* Develop my own client base and responsible for building long-term client relationships",
+		"location": "Atlanta, Georgia, United States",
+		"logo_url": ""
+	}],
+	"education": [{
+		"starts_at": "",
+		"ends_at": "",
+		"field_of_study": "International Affairs; Engineering Management; Organizational Development (HOD)",
+		"degree_name": "Bachelor's degree",
+		"school": "Vanderbilt University",
+		"school_linkedin_profile_url": "https://www.linkedin.com/school/vanderbilt-university/",
+		"description": "Full-Tuition Scholarship to Vanderbilt University (Worth 200K) - (Based on GPA, SAT, Leadership in community, Personal Statement and 3 Recommendations)\n\nMore than 3,000 high school students from NYC were nominated by their high school counselors or community leaders and 10 students were selected as the Posse scholars to Vanderbilt.",
+		"logo_url": "https://media.licdn.com/dms/image/C4D0BAQEhR74nz4kJ6g/company-logo_100_100/0/1648406543052?e=2147483647&v=beta&t=yOJVqhLo9JW44nq_EH5JInKmJUU6PtmvprA44jbUCTw",
+		"grade": "Summa Cum Laude GPA 3.91/4.0",
+		"activities_and_societies": "President of A&S  Synergy Mentoring and College Prep Alternative Spring Break and Alternative Winter Break Leadership Hall SACE Cafe con Leche"
+	}, {
+		"starts_at": "",
+		"ends_at": "",
+		"field_of_study": "Leadership and Strategy",
+		"degree_name": "HBX Executive Education",
+		"school": "Harvard Business School",
+		"school_linkedin_profile_url": "https://www.linkedin.com/school/harvard-business-school/",
+		"description": "(Corporate Sponser: Uber) \n8 module program with Frances Frei and HBS encompassing:\n\nLeadership\n1) Building & Rebuilding Trust (Jan Carlzon case study)\n2) The Wisdom of Teams (Everest Simulation)\n3) Leadership Lessons from Ancient Rome\n4) Leading @Uber (Business & Politics)\n\nStrategy\n1) Differentiation (Commerce Bank case study)\n2) Excellence by Design (Tessei and Oberon)\n3) The service-profit chain (BBBK case study)\n4) Strategy @Uber (Brighter Smiles case study)",
+		"logo_url": "https://media.licdn.com/dms/image/C4D0BAQF_DkXTlZVo1w/company-logo_100_100/0/1639781479002?e=2147483647&v=beta&t=gEn4dEdK1wOcEr7bNcUrrzvfaVxMSgzMrSW4FZ3aDkk",
+		"grade": "",
+		"activities_and_societies": ""
+	}],
+	"languages": ["Bengali", "Hindi", "Urdu", "Punjabi"],
+	"accomplishment_organisations": [],
+	"accomplishment_publications": [{
+		"name": "Meetup (Engineers for Educaiton Tech)",
+		"publisher": "",
+		"published_on": "",
+		"description": "We will bring Engineers and policy experts to discuss some of the issues regarding k-12 educations. We will learn about innovations that are being created.",
+		"url": "http://www.meetup.com/Engineers-for-Education-Technology/"
+	}],
+	"accomplishment_honors_awards": [],
+	"accomplishment_patents": [],
+	"accomplishment_courses": [{
+		"name": "Astronomy",
+		"number": "-"
+	}, {
+		"name": "Calculus",
+		"number": "-"
+	}, {
+		"name": "Economy of Asia",
+		"number": "-"
+	}, {
+		"name": "Engineering Management",
+		"number": "-"
+	}, {
+		"name": "General Logic",
+		"number": "-"
+	}, {
+		"name": "Macro and Microeconomics",
+		"number": "-"
+	}, {
+		"name": "Organization Development",
+		"number": "-"
+	}, {
+		"name": "Statistics and Calculus",
+		"number": "-"
+	}, {
+		"name": "British Politics",
+		"number": "-"
+	}, {
+		"name": "European Style Management",
+		"number": "-"
+	}, {
+		"name": "European Union",
+		"number": "-"
+	}, {
+		"name": "Econ and Education development of Africa",
+		"number": "-"
+	}, {
+		"name": "Education Policy",
+		"number": "-"
+	}, {
+		"name": "International Political Economy",
+		"number": "-"
+	}, {
+		"name": "Leadership in International Business",
+		"number": "-"
+	}],
+	"accomplishment_projects": [{
+		"starts_at": "",
+		"ends_at": "",
+		"title": "Google Perks",
+		"description": "",
+		"url": "https://www.youtube.com/watch?v=rWlHtvZHbZ8#t=194"
+	}],
+	"accomplishment_test_scores": [],
+	"volunteer_work": [],
+	"certifications": [],
+	"connections": 500
+}

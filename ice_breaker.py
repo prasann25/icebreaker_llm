@@ -1,7 +1,7 @@
 from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
-from third_parties.linkedin import scrap_linkedin_profile
+from third_parties.linkedin import scrap_linkedin_profile, scrap_linkedin_profile_json
 from third_parties.wikipedia import scrape_wiki_profile
 from agents.linkedin_lookup_agent import lookup as linkedin_agent
 from agents.wikipedia_lookup_agent import lookup as wikipedia_agent
@@ -17,7 +17,7 @@ def ice_break(name: str) -> PersonIntel:
     # LangChain LinkedIn Agent
     linkedin_profile_url = linkedin_agent(name=name)
     print("linkedin_profile_url - ", linkedin_profile_url)
-    linkedin_data = scrap_linkedin_profile(
+    linkedin_data = scrap_linkedin_profile_json(
         # "https://www.linkedin.com/in/williamhgates/"
         linkedin_profile_url=linkedin_profile_url
     )
@@ -35,7 +35,7 @@ def ice_break(name: str) -> PersonIntel:
     summary_prompt_template = PromptTemplate(
         input_variables=["linkedin_information", "wikipedia_information"],
         template=summary_template,
-        partial_variable={
+        partial_variables={
             "format_instructions": person_intel_parser.get_format_instructions()
         },
     )
@@ -49,10 +49,11 @@ def ice_break(name: str) -> PersonIntel:
     result = chain.run(
         linkedin_information=linkedin_data, wikipedia_information=wikipedia_data
     )
-
+    print(result)
     return person_intel_parser.parse(result)
 
 
 if __name__ == "__main__":
     print("Hello LangChain !")
-    result = ice_break(name="Elon Musk")
+    result = ice_break(name="Bill Gates")
+    print("Final Result", result)
